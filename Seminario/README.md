@@ -25,7 +25,7 @@ npm i
 
 Entre na pasta raiz do projeto com o comando:
 ```
-cd SEMINARIO
+cd seminario
 ```
 
 # 🚀 Tests
