@@ -23,6 +23,11 @@ Este projeto usa o ```npm```, com o projeto clonado basta então executar o segu
 npm i
 ```
 
+Entre na pasta raiz do projeto com o comando:
+```
+cd SEMINARIO
+```
+
 # 🚀 Tests
 É possível rodar testes usando o comando:
 ```
