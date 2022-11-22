@@ -1,20 +1,26 @@
 const calculator = require('../calculator')
 
+let calc;
+
 describe('Calculator tests - Happy path', () => {
+    beforeEach(() => {
+        calc = new calculator();
+    });
+
     test('sum 1 + 2', () => {
-        expect(calculator.sum(1,2)).toBe(3);
+        expect(calc.sum(1,2)).toBe(3);
     })
 
     test('diff 3 - 1', () => {
-        expect(calculator.diff(3,1)).toBe(2);
+        expect(calc.diff(3,1)).toBe(2);
     })
 
     test('mult 4 * 5', () => {
-        expect(calculator.mult(4,5)).toBe(20);
+        expect(calc.mult(4,5)).toBe(20);
     })
 
     test('div 4 * 5', () => {
-        expect(calculator.div(12,4)).toBe(3);
+        expect(calc.div(12,4)).toBe(3);
     })
 
 })
@@ -22,7 +28,7 @@ describe('Calculator tests - Happy path', () => {
 describe('Calculator tests - Sad path', () => {
    
     test('div 6 / 0', () => {
-        expect(calculator.div(6,1)).toBe(0);
+        expect(calc.div(6,0)).toBe("invalid operation");
     })
 
 })
