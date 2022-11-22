@@ -2,7 +2,7 @@ const calculator = require('../calculator')
 
 let calc;
 
-describe('Calculator tests - Happy way', () => {
+describe('Calculator tests - Happy path', () => {
     beforeEach(() => {
         calc = new calculator();
     });
@@ -25,7 +25,7 @@ describe('Calculator tests - Happy way', () => {
 
 })
 
-describe('Calculator tests - Sadness way', () => {
+describe('Calculator tests - Sad path', () => {
    
     test('div 6 / 0', () => {
         expect(calc.div(6,0)).toBe("invalid operation");
