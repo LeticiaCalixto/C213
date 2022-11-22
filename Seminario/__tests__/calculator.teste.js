@@ -1,6 +1,6 @@
 const calculator = require('../calculator')
 
-describe('Calculator tests - Happy way', () => {
+describe('Calculator tests - Happy path', () => {
     test('sum 1 + 2', () => {
         expect(calculator.sum(1,2)).toBe(3);
     })
@@ -19,7 +19,7 @@ describe('Calculator tests - Happy way', () => {
 
 })
 
-describe('Calculator tests - Sadness way', () => {
+describe('Calculator tests - Sad path', () => {
    
     test('div 6 / 0', () => {
         expect(calculator.div(6,1)).toBe(0);
