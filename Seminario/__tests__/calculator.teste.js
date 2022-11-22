@@ -9,7 +9,6 @@ describe("SOMA", () => {
             expect(result).toBe(3);
     });
 });
-
 describe("SUBTRAÇÃO", () => {
     it("Subtração de 1 e 2 deve ser -1", () => {
         // arrange and act
@@ -18,7 +17,6 @@ describe("SUBTRAÇÃO", () => {
         expect(result).toBe(-1);
 });
 });
-
 describe("MULTIPLICAÇÃO", () => {
     it("Multiplicação de 2 e 2 deve ser 4", () => {
         // arrange and act
@@ -27,7 +25,6 @@ describe("MULTIPLICAÇÃO", () => {
         expect(result).toBe(4);
 });
 });
-
 describe("DIVISÃO", () => {
     it("Divisão de 10 por 2 deve ser 5", () => {
         // arrange and act
